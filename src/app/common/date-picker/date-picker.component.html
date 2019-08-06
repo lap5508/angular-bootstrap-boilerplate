@@ -1,0 +1,8 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2">Date:</label>
+  <div class="col-sm-3">
+    <input type="text" class="form-control" name="date" [(ngModel)]="date" />
+    <ngb-datepicker #d name="date" [(ngModel)]="date"
+                    [startDate]="" [maxDate]="" (select)="selectedDateChange($event)"></ngb-datepicker>
+  </div>
+</div>

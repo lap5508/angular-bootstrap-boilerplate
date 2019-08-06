@@ -1,0 +1,25 @@
+<div>
+  <div class="jumbotron">
+    <h1 class="display-3">Angular Bootstrap</h1>
+    <hr class="my-4"/>
+    <div class="row">
+      <hr>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-4">
+            <h6><strong>Radio Item:</strong> {{selectedRadioItem}}</h6>
+          </div>
+          <div class="col-sm-4">
+            <h6><strong>Dropdown Item:</strong> {{selectedDropdownItem}}</h6>
+          </div>
+          <div class="col-sm-4">
+            <h6><strong>Date:</strong> {{selectedDate}}</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-radio-group (selectedItem)="selectedRadioItem=$event"></app-radio-group>
+    <app-typeahead (selectedDropdownItem)="selectedDropdownItem=$event"></app-typeahead>
+    <app-date-picker (selectedDate)="selectedDate=$event"></app-date-picker>
+  </div>
+</div>
