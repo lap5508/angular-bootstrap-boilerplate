@@ -8,7 +8,7 @@ import { NgxLoadingModule } from 'ngx-loading';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { RadioGroupComponent } from './common/radio-group/radio-group.component';
-import { TypeaheadComponent } from './common/typeahead/typeahead.component';
+import { NgbTypeaheadComponent } from './common/ngb-typeahead/ngb-typeahead.component';
 import { NgbDateAdapter, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DatePickerComponent } from './common/date-picker/date-picker.component';
 import { DateStringAdapterService } from './services/date-string-adapter.service';
@@ -18,7 +18,7 @@ import { DateStringAdapterService } from './services/date-string-adapter.service
     AppComponent,
     HomeComponent,
     RadioGroupComponent,
-    TypeaheadComponent,
+    NgbTypeaheadComponent,
     DatePickerComponent
   ],
   imports: [

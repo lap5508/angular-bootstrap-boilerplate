@@ -1,0 +1,6 @@
+<div class="form-group row">
+  <label class="col-form-label col-sm-2">Typeahead:</label>
+  <div class="col-sm-3">
+    <input type="text" class="form-control" name="typeahead" [(ngModel)]="selectedItem" [ngbTypeahead]="typeaheadSearch" (change)="selectedDropdownChange()"/>
+  </div>
+</div>
